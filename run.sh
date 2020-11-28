@@ -7,6 +7,8 @@ cd $SHARE_DIR || exit 4
 for i in ${ANSIBLE_EXEC_YMLS//,/ }
 do
    # call your procedure/other scripts here below
+   echo ""
    echo "Executing top level role $i"
-   ansible-playbook -i hosts $i || exit 14
+   echo ""
+   ansible-playbook -i hosts $i || exit 31
 done
