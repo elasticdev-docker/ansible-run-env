@@ -1,8 +1,9 @@
 #!/bin/bash
 
 export SHARE_DIR=${SHARE_DIR:=/var/tmp/share}
+export EXEC_DIR=${EXEC_DIR:=/var/tmp/share/var/tmp/ansible}
 
-cd $SHARE_DIR || exit 4
+cd $EXEC_DIR || exit 4
 
 for i in ${ANSIBLE_EXEC_YMLS//,/ }
 do
