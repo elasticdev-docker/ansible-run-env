@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 export SHARE_DIR=${SHARE_DIR:=/var/tmp/share}
 export EXEC_DIR=${EXEC_DIR:=/var/tmp/share/var/tmp/ansible}
