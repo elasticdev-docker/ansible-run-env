@@ -9,7 +9,7 @@ for i in ${ANSIBLE_EXEC_YMLS//,/ }
 do
    # call your procedure/other scripts here below
    echo ""
-   echo "Executing top level role $i"
+   echo "Executing top level role $i from exec_dir $EXEC_DIR"
    echo ""
    ansible-playbook -i hosts $i || exit 31
 done
