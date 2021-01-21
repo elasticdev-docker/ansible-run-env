@@ -11,6 +11,8 @@ RUN apk add --no-cache git
 RUN apk add --no-cache curl
 RUN apk add --no-cache rsync
 RUN apk add --no-cache ansible
+RUN apk add --no-cache openssh
+
 RUN ansible --version
 
 ADD run.sh /var/tmp/
